@@ -1,0 +1,25 @@
+{
+    "name": "kind-lang",
+    "displayName": "kind-lang",
+    "description": "Kind extension for Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kind",
+            "aliases": ["kind-lang", "kind"],
+            "extensions": [".kind"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kind",
+            "scopeName": "",
+            "path": "./syntaxes/kind.tmLanguage.json"
+        }]
+    }
+}
